@@ -15,6 +15,13 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
+@app.route('/input/ttl', methods=['POST','GET'])
+def ttl():
+	return jsonify(
+		tempat="bandung",
+		tanggal_lahir="13 mei 1999"
+	)
+
 @app.route('/input/<a>', methods=['GET'])
 def hai(a):
     return str(CB.coba(a))
