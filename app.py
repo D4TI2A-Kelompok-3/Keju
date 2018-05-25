@@ -1,4 +1,4 @@
-from flask import Flask,request,json
+from flask import Flask,request,jsonify
 from input import coba as CB
 app = Flask(__name__)
 
@@ -15,17 +15,10 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/input/ttl', methods=['POST','GET'])
-def ttl():
-	return jsonify(
-		tempat="bandung",
-		tanggal_lahir="13 mei 1999"
-	)
-
 @app.route('/input/<a>', methods=['GET'])
 def hai(a):
     return str(CB.coba(a))
 
-@app.route('/input/<b>', methods=['POST'])
+@app.route('/input/dd/<b>', methods=['POST'])
 def aa(b):
-    return CB.din(b)
+    return jsonify(CB.din(b))

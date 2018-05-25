@@ -7,4 +7,4 @@ def coba(a):
     return jsonify({'vars':vars})
 
 def din(b):
-    return "11 Februari 2018"
+    return "13 Mei 2018"
