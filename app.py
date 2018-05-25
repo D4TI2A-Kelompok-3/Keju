@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,json
 from input import coba as CB
 app = Flask(__name__)
 
@@ -18,3 +18,7 @@ def login():
 @app.route('/input/<a>', methods=['GET'])
 def hai(a):
     return str(CB.coba(a))
+
+@app.route('/input/<b>', methods=['POST'])
+def aa(b):
+    return CB.din(b)

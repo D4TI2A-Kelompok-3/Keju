@@ -5,3 +5,6 @@ def coba(a):
     var = {'ttl' : request.json['ttl']}
     vars.append(var)
     return jsonify({'vars':vars})
+
+def din(b):
+    return "11 Maret 2018"
