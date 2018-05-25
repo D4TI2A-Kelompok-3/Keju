@@ -15,10 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/input/<a>', methods=['GET'])
-def hai(a):
-    return str(CB.coba(a))
-
 @app.route('/input/dd/<b>', methods=['POST'])
 def aa(b):
     return jsonify(CB.din(b))
