@@ -19,9 +19,9 @@ def login():
 def ttl():
 	return jsonify(
 		tempat="bandung",
-		tanggal_lahir="13 mei 1999"
+		tanggal_lahir="13 mei 1999" 
 	)
 
 @app.route('/input/dd/<b>', methods=['POST'])
 def aa(b):
-    return jsonify(CB.din(b))
+    return jsonify(CB.din(b)) 
