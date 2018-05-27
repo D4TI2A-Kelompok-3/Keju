@@ -17,10 +17,17 @@ def login():
 
 @app.route('/input/ttl', methods=['POST','GET'])
 def ttl():
-	return jsonify(
-		tempat="bandung",
-		tanggal_lahir="13 mei 1999" 
-	)
+	ttl = [
+	{
+		"tempat":"bandung",
+		"tanggal_lahir":"13 mei 1999" 
+	},
+	{
+		"tempat":"sydney",
+		"tanggal_lahir":"13 mei 1999" 
+	}
+]
+	return jsonify({'list tempat tanggal_lahir':ttl})
 
 @app.route('/input/dd/<b>', methods=['POST','GET'])
 def aa(b):
