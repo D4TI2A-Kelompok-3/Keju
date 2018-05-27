@@ -22,7 +22,7 @@ def ttl():
 		"tempat":"bandung",
 		"tanggal_lahir":"13 mei 1999" 
 	},
-	{
+	{ 
 		"tempat":"sydney",
 		"tanggal_lahir":"13 mei 1999" 
 	}
