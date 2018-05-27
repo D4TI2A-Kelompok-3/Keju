@@ -29,6 +29,10 @@ def ttl():
 	{ 
 		"tempat":"bandung",
 		"tanggal_lahir":"1 januari 1997" 
+	},
+	{
+		"tempat":"bandung",
+		"tanggal_lahir":"7 Juni 1998"
 	}
 ]
 	return jsonify({'list tempat tanggal_lahir':ttl})
