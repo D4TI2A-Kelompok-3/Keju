@@ -32,3 +32,4 @@ def ttl():
 @app.route('/input/dd/<b>', methods=['POST','GET'])
 def aa(b):
     return jsonify(CB.din(b)) 
+
