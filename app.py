@@ -45,6 +45,6 @@ def ttl():
 ]
 	return jsonify({'list tempat tanggal_lahir':ttl})
 
-@app.route('/input/dd/<b>', methods=['POST','GET'])
+@app.route('/input/<b>', methods=['POST','GET'])
 def aa(b):
     return jsonify(CB.din(b))
