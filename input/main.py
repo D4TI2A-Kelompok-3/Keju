@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/input/ttl', methods=['GET','POST'])
 def ttl():
-	return request.form['ttl']
+	return request.form['ttl']  
